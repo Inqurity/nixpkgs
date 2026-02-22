@@ -216,7 +216,8 @@ in
       ++ lib.optional config.services.hardware.bolt.enable plasma-thunderbolt
       ++ lib.optional config.services.samba.enable kdenetwork-filesharing
       ++ lib.optional config.services.xserver.wacom.enable wacomtablet
-      ++ lib.optional config.services.flatpak.enable flatpak-kcm;
+      ++ lib.optional config.services.flatpak.enable flatpak-kcm
+      ++ lib.optionals config.hardware.sane.enable [ skanlite skanpage ];
 
     environment.pathsToLink = [
       # FIXME: modules should link subdirs of `/share` rather than relying on this
