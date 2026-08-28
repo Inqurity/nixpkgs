@@ -30,7 +30,7 @@ stdenv.mkDerivation (finalAttrs: {
     owner = "clementgallet";
     repo = "libTAS";
     rev = "v${finalAttrs.version}";
-    hash = "sha256-TDFpLleY7+uBjcIqF9e7mA5eQN2s+U04qVQRvpfFfcQ=";
+    hash = "sha256-2b+Cqzk3VDhBV+Wke37z6VrVymavZq3xGiJDY9uQ5G4=";
   };
   patches = [
     # Fix build with gcc15
